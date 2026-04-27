@@ -1,0 +1,81 @@
+package co.simplon.wishmegift.entity;
+
+import jakarta.persistence.*;
+import java.time.LocalDate;
+
+
+@Entity
+@Table(name = "wishlists") 
+public class Wishlist {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id; 
+
+    @Column(nullable = false)
+    private String nom;
+
+    @Enumerated(EnumType.STRING)
+    private Theme theme;
+
+    @Column(length = 1000) 
+    private String description;
+
+    private LocalDate dateCreation;
+
+    @Column(nullable = false)
+    private String auteur;
+
+    public Wishlist(){
+
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public Theme getTheme() {
+        return theme;
+    }
+
+    public void setTheme(Theme theme) {
+        this.theme = theme;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public LocalDate getDateCreation() {
+        return dateCreation;
+    }
+
+    public void setDateCreation(LocalDate dateCreation) {
+        this.dateCreation = dateCreation;
+    }
+
+    public String getAuteur() {
+        return auteur;
+    }
+
+    public void setAuteur(String auteur) {
+        this.auteur = auteur;
+    }
+}
+

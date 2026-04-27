@@ -1,0 +1,3 @@
+INSERT INTO wishlists (id, nom, theme, description, date_creation, auteur) VALUES (nextval('wishlists_seq'), 'Liste de Noël de la team', 'NOEL', 'Toutes nos idées pour le Père Noël Secret', '2026-12-25', 'VioletVikings');
+INSERT INTO wishlists (id, nom, theme, description, date_creation, auteur) VALUES (nextval('wishlists_seq'), 'Anniversaire de l''app', 'ANNIVERSAIRE', 'On fête le premier lancement sans bug !', '2026-04-27', 'Simplon');
+INSERT INTO wishlists (id, nom, theme, description, date_creation, auteur) VALUES (nextval('wishlists_seq'), 'Mariage Royal', 'MARIAGE', 'Une petite liste pour le grand jour', '2026-06-15', 'AuteurInconnu');

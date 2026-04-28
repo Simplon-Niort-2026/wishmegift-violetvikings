@@ -51,7 +51,7 @@ public class WishlistController {
                 WishList.setName(updateWishList.getName());
                 WishList.setDescription(updateWishList.getDescription());
                 WishList.setTheme(updateWishList.getTheme());
-                WishList.setAuteur(updateWishList.getAuteur());
+                WishList.setAuthor(updateWishList.getAuthor());
                 return repository.save(WishList);
             })
             .orElseGet(() ->{

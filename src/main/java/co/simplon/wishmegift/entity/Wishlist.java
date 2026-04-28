@@ -24,7 +24,7 @@ public class Wishlist {
     private LocalDate dateCreation;
 
     @Column(nullable = false)
-    private String auteur;
+    private String author;
 
     public Wishlist(){
 
@@ -70,12 +70,12 @@ public class Wishlist {
         this.dateCreation = dateCreation;
     }
 
-    public String getAuteur() {
-        return auteur;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setAuteur(String auteur) {
-        this.auteur = auteur;
+    public void setAuthor(String auteur) {
+        this.author = author;
     }
 }
 

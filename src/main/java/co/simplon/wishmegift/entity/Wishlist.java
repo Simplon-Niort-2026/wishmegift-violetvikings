@@ -13,7 +13,7 @@ public class Wishlist {
     private Long id; 
 
     @Column(nullable = false)
-    private String nom;
+    private String name;
 
     @Enumerated(EnumType.STRING)
     private Theme theme;
@@ -38,12 +38,12 @@ public class Wishlist {
         this.id = id;
     }
 
-    public String getNom() {
-        return nom;
+    public String getName() {
+        return name;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Theme getTheme() {

@@ -48,7 +48,7 @@ public class WishlistController {
         public Wishlist updateWishList(@PathVariable Long id, @RequestBody Wishlist updateWishList) {
             return repository.findById(id)
             .map(WishList ->{
-                WishList.setNom(updateWishList.getNom());
+                WishList.setName(updateWishList.getName());
                 WishList.setDescription(updateWishList.getDescription());
                 WishList.setTheme(updateWishList.getTheme());
                 WishList.setAuteur(updateWishList.getAuteur());

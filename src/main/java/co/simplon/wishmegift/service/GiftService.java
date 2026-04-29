@@ -21,24 +21,22 @@ public class GiftService {
         return giftList;
     }
 
-   
-
-    public GiftEntity saveGift(GiftEntity gift){
+    public GiftEntity saveGift(GiftEntity gift) {
         return giftRepository.save(gift);
-}
-public GiftEntity updateGift(Long id, GiftEntity gift) {
-    GiftEntity existingGift = giftRepository.findById(id)
-            .orElseThrow(() -> new RuntimeException("Gift not found"));
+    }
 
-    existingGift.setName(gift.getName());
-    existingGift.setPrice(gift.getPrice());
-    existingGift.setDescription(gift.getDescription());
+    public GiftEntity updateGift(Long id, GiftEntity gift) {
+        GiftEntity existingGift = giftRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Gift not found"));
 
-    return giftRepository.save(existingGift);
-}
+        existingGift.setName(gift.getName());
+        existingGift.setPrice(gift.getPrice());
+        existingGift.setDescription(gift.getDescription());
 
- public void deleteGift(final Long id) {
+        return giftRepository.save(existingGift);
+    }
+
+    public void deleteGift(final Long id) {
         giftRepository.deleteById(id);
     }
 }
-

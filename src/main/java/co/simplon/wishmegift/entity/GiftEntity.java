@@ -8,6 +8,7 @@ import jakarta.persistence.Table;
 
 
 @Entity
+// Ici "gift" sans "s"
 @Table(name="gift")
 public class GiftEntity {
 
@@ -41,36 +42,65 @@ public class GiftEntity {
         this.available = available;
     }
 
-    // Getters / Setters
+
     public Long getGiftId() {
         return giftId;
     }
+
 
     public void setGiftId(Long giftId) {
         this.giftId = giftId;
     }
 
-    public String getTitle() {
+
+    public String getName() {
         return name;
     }
 
-    public void setTitle(String name) {
+
+    public void setName(String name) {
         this.name = name;
     }
+
 
     public String getDescription() {
         return description;
     }
 
+
     public void setDescription(String description) {
         this.description = description;
     }
 
-    public boolean isAvailable() {
+
+    public String getLink() {
+        return link;
+    }
+
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+
+    public Double getPrice() {
+        return price;
+    }
+
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+
+    public Boolean getAvailable() {
         return available;
     }
 
-    public void setAvailable(boolean available) {
+
+    public void setAvailable(Boolean available) {
         this.available = available;
     }
+
+    // Getters / Setters
 }

@@ -1,0 +1,26 @@
+info:
+  name: crée un cadeau
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:8080/gifts
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Clavier Mécanique RGB",
+        "description": "Un super clavier pour coder mes projets Spring Boot",
+        "link": "https://www.exemple.com/clavier",
+        "price": 89.99,
+        "desireLevel": "LEVEL1", 
+        "available": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

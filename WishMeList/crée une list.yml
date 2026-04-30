@@ -1,11 +1,21 @@
 info:
   name: crée une list
   type: http
-  seq: 1
+  seq: 2
 
 http:
   method: POST
-  url: http://localhost:8080/API/wishlists
+  url: http://localhost:8080/api/wishlists
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Ma liste d'idées cadeaux",
+        "theme": "NOEL",
+        "description": "Une liste pour tester si mon controller fonctionne toujours bien",
+        "author": "Test",
+        "dateCreation": "2026-04-29"
+      }
   auth: inherit
 
 settings:

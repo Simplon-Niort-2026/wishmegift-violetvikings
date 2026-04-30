@@ -1,0 +1,26 @@
+info:
+  name: modifier un gift
+  type: http
+  seq: 8
+
+http:
+  method: PUT
+  url: http://localhost:8080/gifts/1
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Casque Bose QC45 (Mise à jour)",
+        "description": "Finalement, le modèle bleu est mieux",
+        "link": "https://bose.fr/qc45-bleu",
+        "price": 220.00,
+        "desireLevel": "LEVEL2",
+        "available": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

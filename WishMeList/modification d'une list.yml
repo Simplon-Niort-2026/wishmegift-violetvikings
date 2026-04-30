@@ -1,11 +1,20 @@
 info:
   name: modification d'une list
   type: http
-  seq: 3
+  seq: 4
 
 http:
   method: PUT
-  url: http://localhost:8080/api/wishlists/2
+  url: http://localhost:8080/api/wishlists/102
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Liste de Noël (Mise à jour)",
+        "theme": "NOEL",
+        "description": "Nouvelle description pour la présentation",
+        "author": "Test"
+      }
   auth: inherit
 
 settings:

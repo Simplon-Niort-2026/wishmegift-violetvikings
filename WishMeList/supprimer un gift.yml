@@ -1,11 +1,11 @@
 info:
-  name: "suppression d'une list "
+  name: supprimer un gift
   type: http
-  seq: 3
+  seq: 9
 
 http:
   method: DELETE
-  url: http://localhost:8080/api/wishlists/102
+  url: http://localhost:8080/gifts/1
   auth: inherit
 
 settings:

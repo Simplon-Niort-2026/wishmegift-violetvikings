@@ -1,11 +1,19 @@
 info:
   name: cree un user
   type: http
-  seq: 4
+  seq: 1
 
 http:
   method: POST
   url: http://localhost:8080/api/auth/register
+  body:
+    type: json
+    data: |-
+      {
+        "username": "Test",
+        "email": "viking@test.com",
+        "password": "MdpTresFort2026@"
+      }
   auth: inherit
 
 settings:

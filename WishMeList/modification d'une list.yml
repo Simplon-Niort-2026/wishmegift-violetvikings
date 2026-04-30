@@ -1,7 +1,7 @@
 info:
   name: modification d'une list
   type: http
-  seq: 4
+  seq: 7
 
 http:
   method: PUT

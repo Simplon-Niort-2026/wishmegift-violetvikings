@@ -49,4 +49,6 @@ public ResponseEntity<User> update(@PathVariable Long id, @RequestBody User user
 public ResponseEntity<User> patch(@PathVariable Long id, @RequestBody Map<String, Object> updates) {
     return ResponseEntity.ok(userService.patchUser(id, updates));
 }
+
+
 }
